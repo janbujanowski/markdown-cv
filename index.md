@@ -13,12 +13,11 @@ Software Developer, Master of Engineering, Warsaw University of Life Sciences
 
 ## About me
 
-Last 5 years I've been dedicating some of my free time into researching AI possibilties in assisting trading indicators and I am very keen on joining quantitative development teams to mutually evolve the system capabilities. 
 While my main field of experience remains in .NET technologies, during my 10 years career I have faced various chalanges and I was never afraid to step out into the new unknowns.
 I have worked with both corporations and small startup-like companies, as well as multiple non-profit organizations, where I learned about different stages and methods of projects’ development. I took part in projects not only as a programmer, but also as an architect, team leader, and administrator/dev-ops, which
 helped me to deal with problems at any stage of product delivery. I immensely enjoyed participating in NGOs and creating solutions for
 education, social welfare, and politics. The purpose and positive social impact of a project are the two most important
-factors for me, not only the technology.  Please see details of my experience in a brief summary below.
+factors for me, not only the technology. Please see details of my experience in a brief summary below.
 
 ## Education and training
 
