@@ -7,17 +7,16 @@ title: Jan Bujanowski
 Software Developer, Master of Engineering, Warsaw University of Life Sciences
 
 <div id="webaddress">
-<a href="jan.bujanowski@gmail.com@applesdofall.org">jan.bujanowski@gmail.com</a>
+<a href="jan.bujanowski@gmail.com">jan.bujanowski@gmail.com</a>
 | +48 506 803 600
 </div>
 
 ## About me
 
 ​Last 5 years I’ve been dedicating my free time into researching AI possibilities in assisting
-trading indicators and I am very keen on joining quantitative development teams to mutually evolve
-the system capabilities. It has always been my interest however it took some time to develop necessary skills and experience which I believe I have finally acquired. While my main field of experience remains in .NET technologies, during my 10 years career I have faced various challenges and I was never afraid to step out into the new unknowns. I have worked with both corporations and small startup-like companies, as well as non-profit organizations, where I learned about different stages and methods of projects’
-development. I took part in projects not only as a programmer, but executing responsibilities of an architect, team leader,
-and administrator/dev-ops, which helped me to deal with problems at any stage of product delivery regardless if it's a technical, procedural or external obstacle.
+trading indicators and I am very keen on joining quantitative development teams to finally mix my passion with proffesional career. It has always been my interest however it took some time to develop necessary skills and experience which I believe I have finally acquired. 
+While my main field of experience remains in .NET technologies, during my 10 years career I have faced various challenges and I was never afraid to step out into the new unknowns. I have worked with both corporations and small startup-like companies, as well as non-profit organizations, where I learned about different stages and methods of projects’ development. 
+I took part in projects not only as a programmer, but executing responsibilities of an architect, team leader, and administrator/dev-ops, which helped me to deal with problems at any stage of product delivery regardless if it's a technical, procedural or external obstacle.
 Please see details of my experience in a brief summary below
 
 ## Education and training
@@ -30,7 +29,7 @@ __Master of Engineering__, Field: *Intelligent Systems*, Warsaw University of Li
 
 The full title of my thesis was "Construction and testing of the transaction system for financial instruments listed on the
 Warsaw Stock Exchange". The goal of the project was to create a program able to perform transactions on a test system
-with data from Warsaw Stock Market and learn by itself to generate profits. Using neural networks and genetics
+with data from Warsaw Stock Market and learn by itself to generate profits. Using neural networks and genetic
 algorithms it was able to create a valid model that could be used to determine opportune times to perform stock
 operations.
 
@@ -95,7 +94,7 @@ I took some time off to plan on my next life and career goals. Additionally purs
 
 `05/18 to 06/21`
 
-__SENIOR .NET DEVELOPER__, Finances, KYC, Banking integrations
+__SENIOR .NET DEVELOPER__, Finances, KYC, Risk, Banking integrations
 
 __Stack__ C# / ASP.NET / Java - Apache-Camel / JBoss / kafka / Oracle / MSSQL / Docker / AzureDevOps / Git / TFVC
 
