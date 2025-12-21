@@ -13,11 +13,12 @@ Software Developer, Master of Engineering, Warsaw University of Life Sciences
 
 ## About me
 
-While my main field of experience remains in .NET technologies, during my 10 years career I have faced various chalanges and I was never afraid to step out into the new unknowns.
-I have worked with both corporations and small startup-like companies, as well as multiple non-profit organizations, where I learned about different stages and methods of projects’ development. I took part in projects not only as a programmer, but also as an architect, team leader, and administrator/dev-ops, which
-helped me to deal with problems at any stage of product delivery. I immensely enjoyed participating in NGOs and creating solutions for
-education, social welfare, and politics. The purpose and positive social impact of a project are the two most important
-factors for me, not only the technology. Please see details of my experience in a brief summary below.
+​Last 5 years I’ve been dedicating my free time into researching AI possibilities in assisting
+trading indicators and I am very keen on joining quantitative development teams to mutually evolve
+the system capabilities. It has always been my interest however it took some time to develop necessary skills and experience which I believe I have finally acquired. While my main field of experience remains in .NET technologies, during my 10 years career I have faced various challenges and I was never afraid to step out into the new unknowns. I have worked with both corporations and small startup-like companies, as well as non-profit organizations, where I learned about different stages and methods of projects’
+development. I took part in projects not only as a programmer, but executing responsibilities of an architect, team leader,
+and administrator/dev-ops, which helped me to deal with problems at any stage of product delivery regardless if it's a technical, procedural or external obstacle.
+Please see details of my experience in a brief summary below
 
 ## Education and training
 
@@ -57,9 +58,13 @@ English C1, French B2, Spanish B1
 
 __SENIOR .NET ENGINEER__, Automotive, Telecommunications
 
-__Stack__ C# / ASP.NET / Azure / ADO / Docker / Postgres / GSMA / IoT / ASN.1
+__Stack__ C# / ASP.NET / Azure / ADO / Docker / Postgres/MSSQL / GSMA / IoT / ASN.1 / ServiceBus
 
-Architectural design and development based on GSMA specifications for IoT device manager. Greenfield product with multiple architectural decisions, managing integrations with existing ecosystem, complying with country specific law requirements. Leading the path to GSMA security certification.
+Architectural design and development based on GSMA specifications for IoT device manager. Greenfield product with multiple architectural decisions, managing integrations with existing microservices ecosystem, complying with country specific law requirements. 
+- • Leading the path to GSMA security certification. 
+- • Providing PoCs to external teams, 
+- • resolving TLS and Certificates issues for old embedded systems, 
+- • supporting juniors and new joiners by knowledge transfer
 
 ### Munich Re
 
@@ -81,14 +86,10 @@ Working on a new product for insurance market with a lot of breaking changes and
 
 `06/21 to 06/22`
 
-I've realised I needed a break in my career after having almost constant work under pressure for around 4 years of
-employment during which I had very little time for holiday breaks or even weekend breaks for my hobbies. During my
-time off I've accomplished a few steps in my personal development :
+I took some time off to plan on my next life and career goals. Additionally pursued a bit of side projects/hobby :
 - • Divemaster course (P3)
-- • Joined Handicapped Scuba Association as a volunteer to help people in discovering scuba diving
 - • Neurox (Neural Networks projects started as my master thesis)
-- • Revitalized inherited land for growing vegetables and helped city gardens administration with tech debt
-- • Built a wooden summer cabin by myself
+- • Revitalized inherited land, built a wooden summer cabin helped city gardens administration with tech debt
 
 ### Fenergo 
 
@@ -103,7 +104,6 @@ had to both expose and consume different APIs, translate the data between format
 with an existing ecosystem, using a set of different tools consisting on mixed technologies (JVM and .NET based).
 Additionally, I've performed product updates, UI configuration, and set up enterprise environment configuration scripts
 (preparing the OS to run all services properly)
-Keywords :
 - • Designing and developing a system for Client Onboarding process (KYC)
 - • Integrating the product with systems in the client's environment
 - • Developing front-end changes for data manipulation and reading reports
@@ -133,7 +133,7 @@ __DEVELOPER SPECIALIST__, Finances, Trading reports
 __Stack__ C# / MSSQL / ASP.NET / JS / Angular 1 / VB. NET (excel) / MSSQL / EF / TFVC
 
 Internal system gathering data from portfolios and systems across company to summarize daily reports for traders.
-Besides test automation, I was developing tools to facilitate daily tasks like data recalculation or loading specific datasets.
+Besides test automation, I was developing tools to facilitate daily tasks like data recalculation or reloading datasets.
 - • software testing automation framework and tools for data loading
 - • developing new reports and calculations based on business requirements
 - • new tools for production maintenance built-in web add-ons for 1st line support, release management, client notifications
