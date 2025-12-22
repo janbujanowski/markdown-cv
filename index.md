@@ -59,7 +59,7 @@ __SENIOR .NET ENGINEER__, Automotive, Telecommunications
 
 __Stack__ C# / ASP.NET / Azure / ADO / Docker / Postgres/MSSQL / GSMA / IoT / ASN.1 / ServiceBus
 
-Architectural design and development based on GSMA specifications for IoT device manager. Greenfield product with multiple architectural decisions, managing integrations with existing microservices ecosystem, complying with country specific law requirements. Our teams is responsible for creating a new subsystem as a showcase of DDD and clean architecture in a proper cloud architecture to make patterns for decoupling and optimizing existing codebase.
+Architectural design and development based on GSMA specifications for IoT device manager. Greenfield product with multiple architectural decisions, managing integrations with existing microservices ecosystem, complying with country specific law requirements. Our team is responsible for creating a new subsystem as a showcase of DDD and clean architecture in a proper cloud architecture to make patterns for decoupling and optimizing existing codebase.
 - • Leading the path to GSMA security certification. 
 - • Providing PoCs to external teams, 
 - • resolving TLS and Certificates issues for old embedded systems, 
