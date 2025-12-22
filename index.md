@@ -59,7 +59,7 @@ __SENIOR .NET ENGINEER__, Automotive, Telecommunications
 
 __Stack__ C# / ASP.NET / Azure / ADO / Docker / Postgres/MSSQL / GSMA / IoT / ASN.1 / ServiceBus
 
-Architectural design and development based on GSMA specifications for IoT device manager. Greenfield product with multiple architectural decisions, managing integrations with existing microservices ecosystem, complying with country specific law requirements. 
+Architectural design and development based on GSMA specifications for IoT device manager. Greenfield product with multiple architectural decisions, managing integrations with existing microservices ecosystem, complying with country specific law requirements. Our teams is responsible for creating a new subsystem as a showcase of DDD and clean architecture in a proper cloud architecture to make patterns for decoupling and optimizing existing codebase.
 - • Leading the path to GSMA security certification. 
 - • Providing PoCs to external teams, 
 - • resolving TLS and Certificates issues for old embedded systems, 
@@ -71,7 +71,7 @@ Architectural design and development based on GSMA specifications for IoT device
 
 __SENIOR .NET ENGINEER__, Insurances 
 
-__Stack__ C# / ASP.NET / Azure / ADO / Docker
+__Stack__ C# / ASP.NET / Azure / ADO / Docker / ServiceBus
 
 Working on a new product for insurance market with a lot of breaking changes and decisions. I've participated from analyzing requirements, preparing the solution to development and deployment and optimizing the exisiting code base.
 - • Created new feature Azure Machine Learning solution, price predictor calculator and integrated with UI widget
@@ -96,7 +96,7 @@ I took some time off to plan on my next life and career goals. Additionally purs
 
 __SENIOR .NET DEVELOPER__, Finances, KYC, Risk, Banking integrations
 
-__Stack__ C# / ASP.NET / Java - Apache-Camel / JBoss / kafka / Oracle / MSSQL / Docker / AzureDevOps / Git / TFVC
+__Stack__ C# / ASP.NET / Java - Apache-Camel / JBoss / Kafka / Oracle / MSSQL / Docker / AzureDevOps / Git / TFVC
 
 During my employment, I have worked with various banks within various locations mostly as an integration developer. I
 had to both expose and consume different APIs, translate the data between formats, perform validations to integrate
