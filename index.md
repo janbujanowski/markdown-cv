@@ -53,7 +53,7 @@ English C1, French B2, Spanish B1
 
 ### Cubic
 
-`06/23 to now`
+`06/24 to now`
 
 __SENIOR .NET ENGINEER__, Automotive, Telecommunications
 
@@ -67,7 +67,7 @@ Architectural design and development based on GSMA specifications for IoT device
 
 ### Munich Re
 
-`10/22 to 06/23`
+`10/22 to 06/24`
 
 __SENIOR .NET ENGINEER__, Insurances 
 
@@ -92,7 +92,7 @@ I took some time off to plan on my next life and career goals. Additionally purs
 
 ### Fenergo 
 
-`05/18 to 06/21`
+`06/18 to 06/21`
 
 __SENIOR .NET DEVELOPER__, Finances, KYC, Risk, Banking integrations
 
@@ -110,7 +110,7 @@ Additionally, I've performed product updates, UI configuration, and set up enter
 
 ### G1ANT
 
-`12/16 to 04/18`
+`12/16 to 06/18`
 
 __C# DEVELOPER__, RPA, Automation
 
@@ -129,7 +129,7 @@ __Stack__ WinAPI / C# / MSSQL / ASP.NET / MSBuild / Slack API / Git / OCR / Vue.
 
 __DEVELOPER SPECIALIST__, Finances, Trading reports
 
-__Stack__ C# / MSSQL / ASP.NET / JS / Angular 1 / VB. NET (excel) / MSSQL / EF / TFVC
+__Stack__ C# / MSSQL / ASP.NET / JS / Angular 1 / VB. NET (excel) / MSSQL / EF / TFVC / ETL
 
 Internal system gathering data from portfolios and systems across company to summarize daily reports for traders.
 Besides test automation, I was developing tools to facilitate daily tasks like data recalculation or reloading datasets.
