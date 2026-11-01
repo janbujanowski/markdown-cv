@@ -4,11 +4,12 @@ title: Jan Bujanowski
 ---
 
 # Jan Bujanowski
-Senior Full-Stack & Platform Engineer, Master of Engineering (Intelligent Systems), Warsaw University of Life Sciences
+Senior Full-Stack, Master of Engineering (Intelligent Systems),
+<br> Warsaw University of Life Sciences
 
 <div id="webaddress">
 <a href="mailto:jan.bujanowski@gmail.com">jan.bujanowski@gmail.com</a>
-| +48 506 803 600
+| <a class="linkedin" href="https://www.linkedin.com/in/jan-bujanowski/">linkedin.com/in/jan-bujanowski</a>
 </div>
 
 ## About me
@@ -37,7 +38,7 @@ __Engineering practices__ code review, unit and integration testing, system desi
 
 ### Cubic
 
-`06/24 to now`
+`06/2024 to now`
 
 __SENIOR SOFTWARE ENGINEER (FULL-STACK / PLATFORM)__, Automotive, Telecommunications, IoT
 
@@ -57,7 +58,7 @@ The second project I've led started with a question: why are SIM card profiles s
 
 ### Munich Re
 
-`10/22 to 06/24`
+`10/2022 to 06/2024 (21 months)`
 
 __SENIOR FULL-STACK ENGINEER__, Insurance
 
@@ -73,7 +74,7 @@ New insurance product with many breaking changes and decisions. I took part in t
 
 ### Sabbatical Year
 
-`07/21 to 07/22`
+`07/2021 to 07/2022`
 
 A year off to plan my next career steps, used for personal projects:
 - Neurox: neural network trading research in Python, C# and CUDA (continued from my master's thesis)
@@ -82,7 +83,7 @@ A year off to plan my next career steps, used for personal projects:
 
 ### Fenergo
 
-`06/18 to 07/21`
+`06/2018 to 07/2021 (38 months)`
 
 __SENIOR SOFTWARE DEVELOPER (FULL-STACK / INTEGRATIONS)__, Finance, KYC, Risk, Banking integrations
 
@@ -97,7 +98,7 @@ Integration developer for banks in many countries. I exposed and consumed APIs, 
 
 ### G1ANT
 
-`12/16 to 06/18`
+`12/2016 to 06/2018 (19 months)`
 
 __SOFTWARE DEVELOPER__, RPA, Developer tooling, Automation
 
@@ -111,7 +112,7 @@ Built "G1ANT.Robot", a Robotic Process Automation platform competing with UiPath
 
 ### UniCredit
 
-`09/15 to 07/16`
+`09/2015 to 07/2016 (11 months)`
 
 __DEVELOPER SPECIALIST__, Finance, Trading reports
 
@@ -124,7 +125,7 @@ Internal system that gathered data from portfolios and systems across the compan
 
 ### Finder Systems
 
-`03/14 to 12/14`
+`03/2014 to 12/2014 (10 months)`
 
 __JUNIOR FULL-STACK DEVELOPER__, Automotive, Fleet reports
 
@@ -139,7 +140,7 @@ Integration platform for real-time vehicle fleet monitoring and optimisation rep
 
 ### Masters
 
-`01/18 to 01/20`
+`01/2018 to 01/2020`
 
 __Master of Engineering__, Field: *Intelligent Systems*, Warsaw University of Life Sciences
 
@@ -147,7 +148,7 @@ Thesis: "Construction and testing of the transaction system for financial instru
 
 ### Bachelors
 
-`09/12 to 02/16`
+`09/2012 to 02/2016`
 
 __Bachelor of Engineering__, Field: *Software Engineering*, Warsaw University of Life Sciences
 
@@ -155,7 +156,7 @@ Designed and developed a mobile app for booking spaces in a parking management s
 
 ### Certificates and licences
 
-Microsoft AZ-204 (Azure Developer Associate), AZ-900, AI-900 · Driving licence B · CMAS P3 Divemaster · Yacht helmsman · Kiteboarding 2I
+Microsoft AZ-204 (Azure Developer Associate), AZ-900, AI-900 · Driving licence B · IDF Scuba Diving Instructor · Yacht helmsman · Kiteboarding 2I
 
 ### Languages
 

@@ -6,11 +6,13 @@
   <title>CV</title>
   <!-- The only dependency: a Markdown parser, pinned to an exact version. -->
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <!-- QR code generator for the code in the top right corner. -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
   <style>
     /* ---- Tweak the look here ---------------------------------------- */
     /* Colours follow VS Code's "Light+" and "Dark+" syntax themes.
-       Light is the default and is always used for print/PDF;
-       dark is used on screen when the device or browser prefers it. */
+       Light is the default; dark is used when the device or browser prefers it.
+       Print/PDF uses whatever theme is on screen. */
     :root {
       color-scheme: light dark;
 
@@ -31,29 +33,25 @@
 
       --font: "Segoe UI", system-ui, -apple-system, Verdana, sans-serif;
       --mono: "Cascadia Code", Consolas, Menlo, monospace;
-      --left: 21%;          /* width of the left column (headings, dates) */
-      --gap: 2rem;          /* space between left and right column */
     }
     /* data-theme on <html> is set by the script: from the device setting,
-       or from the theme button. Print always stays light. */
-    @media screen {
-      :root[data-theme="dark"] {
-        color-scheme: dark;
-        --page-bg: #181818;
-        --paper-bg: #1f1f1f;
-        --text: #d4d4d4;
-        --muted: #858585;
-        --rule: #333333;
-        --shadow: rgba(0, 0, 0, .5);
+       the theme button, or ?theme=light / ?theme=dark in the URL. */
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --page-bg: #181818;
+      --paper-bg: #1f1f1f;
+      --text: #d4d4d4;
+      --muted: #858585;
+      --rule: #333333;
+      --shadow: rgba(0, 0, 0, .5);
 
-        --title: #dcdcaa;   /* light golden */
-        --section: #4ec9b0; /* teal green */
-        --key: #9cdcfe;
-        --date: #b5cea8;    /* pale green */
-        --comment: #6a9955;
-        --link: #569cd6;
-        --link-hover: #3794ff;
-      }
+      --title: #dcdcaa;   /* light golden */
+      --section: #4ec9b0; /* teal green */
+      --key: #9cdcfe;
+      --date: #b5cea8;    /* pale green */
+      --comment: #6a9955;
+      --link: #569cd6;
+      --link-hover: #3794ff;
     }
 
     * { box-sizing: border-box; }
@@ -66,56 +64,65 @@
     }
 
     #cv {
-      max-width: 60rem;
-      margin: 2rem auto;
-      padding: 3rem 3.5rem;
+      max-width: 52rem;
+      margin: 1.5rem auto;
+      padding: 2.5rem 3rem;
       background: var(--paper-bg);
       box-shadow: 0 1px 4px var(--shadow);
     }
 
-    /* Two-column rows: left = heading/meta, right = content */
-    .row {
-      display: grid;
-      grid-template-columns: var(--left) 1fr;
-      column-gap: var(--gap);
-    }
-    .row > .left { text-align: right; }
-
     /* Header */
-    header.row { margin-bottom: 1rem; }
-    h1 { margin: 0; font-size: 2.6rem; font-weight: 400; line-height: 1.1; color: var(--title); }
-    .subtitle { margin: .4rem 0 0; font-style: italic; font-size: 1.05rem; color: var(--section); }
-    #webaddress { margin-top: .6rem; font: .85rem var(--mono); color: var(--muted); }
+    header { margin-bottom: .4rem; display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; }
+    header > .right { flex: 1; min-width: 0; }
+    header > .left { order: 2; flex: none; display: flex; flex-direction: column; align-items: center; }
+    /* QR code where a photo would usually go; always dark on white so every scanner reads it */
+    .qr { display: block; width: 92px; padding: 4px; background: #fff; border-radius: 4px; }
+    .qr svg { display: block; width: 100%; height: auto; }
+    .qr-caption { display: block; margin-top: .25rem; font: .7rem var(--mono); color: var(--link); text-align: center; text-decoration: none; }
+    h1 { margin: 0; font-size: 2.3rem; font-weight: 400; line-height: 1.1; color: var(--title); }
+    .subtitle { margin: .25rem 0 0; font-style: italic; font-size: 1rem; color: var(--section); }
+    #webaddress { margin-top: .3rem; font: .85rem var(--mono); color: var(--muted); }
     #webaddress a { color: inherit; text-decoration: none; }
+    #webaddress a:hover { color: var(--link-hover); }
+    /* Icons in front of links with class="linkedin" / class="website" in index.md */
+    #webaddress .linkedin::before, #webaddress .website::before {
+      content: ""; display: inline-block; width: 1em; height: 1em; margin-right: .35em;
+      vertical-align: -.15em; background-color: var(--link);
+      -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat;
+    }
+    #webaddress .linkedin { --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z'/%3E%3C/svg%3E"); }
+    #webaddress .website { --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20'/%3E%3C/svg%3E"); }
 
-    /* Sections */
-    section { margin-top: 1.8rem; }
+    /* Sections (one per ## heading) */
+    section { margin-top: 1.1rem; }
     h2 {
       margin: 0;
-      font-size: 1.05rem;
+      font-size: 1rem;
       font-weight: 600;
       color: var(--section);
       text-transform: uppercase;
       letter-spacing: .04em;
     }
-    .section-head { border-bottom: 1px solid var(--rule); padding-bottom: .3rem; margin-bottom: .8rem; }
+    .section-head { border-bottom: 1px solid var(--rule); padding-bottom: .15rem; margin-bottom: .5rem; }
 
-    /* Entries (one per ### heading) */
-    .entry { margin-bottom: 1.1rem; }
+    /* Entries (one per ### heading): "Company, 06/2024 to now (30 months)" on one line */
+    .entry { margin-bottom: .7rem; }
+    .entry > .left { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .45rem; }
     h3 { margin: 0; font-size: 1rem; font-weight: 600; color: var(--title); }
-    .date { display: block; font: .8rem var(--mono); color: var(--date); }
+    h3:not(:last-child)::after { content: ","; }
+    .date { font: .85rem var(--mono); color: var(--date); }
 
-    p { margin: 0 0 .5rem; }
-    ul { margin: .2rem 0 .6rem; padding-left: 1.1rem; }
-    li { margin-bottom: .15rem; }
+    p { margin: 0 0 .3rem; }
+    ul { margin: .1rem 0 .35rem; padding-left: 1.1rem; }
+    li { margin-bottom: .05rem; }
     li::marker { color: var(--muted); }
     a { color: var(--link); }
     a:hover { color: var(--link-hover); }
     strong { font-weight: 600; color: var(--key); }
     em { color: var(--comment); }
     code { font-family: var(--mono); font-size: .85em; }
-    .label { margin: .6rem 0 .1rem; font-weight: 600; color: var(--title); }
-    .label:first-child { margin-top: 0; }
+    .label { margin: .35rem 0 0; font-weight: 600; color: var(--title); }
+    .label:first-child { margin-top: .1rem; }
 
     /* Per-section tweaks: every ## gets .section-<name>, every ### gets .entry-<name> */
     .entry-gdpr { font-size: .75rem; color: var(--muted); }
@@ -136,27 +143,28 @@
     #error { max-width: 40rem; margin: 4rem auto; padding: 1rem 1.5rem; background: var(--paper-bg); border: 1px solid var(--rule); border-left: 3px solid #f14c4c; }
     #error code { color: var(--key); }
 
-    /* Phones: one column */
-    @media (max-width: 700px) {
-      #cv { margin: 0; padding: 1.5rem 1rem; box-shadow: none; }
-      .row { grid-template-columns: 1fr; }
-      .row > .left { text-align: left; }
-      .left:empty { display: none; }
-      h1 { font-size: 2rem; }
+    /* Phones */
+    @media screen and (max-width: 700px) {
+      #cv { margin: 0; padding: 1.25rem 1rem; box-shadow: none; }
+      h1 { font-size: 1.9rem; }
       #toolbar { position: static; justify-content: flex-end; padding: .5rem 1rem 0; }
     }
 
-    /* Print / Save as PDF */
-    @page { size: A4; margin: 14mm 14mm 14mm 12mm; }
+    /* Print / Save as PDF
+       In the print dialog keep Margins on "Default" so these page margins are used.
+       The paper colour fills the whole sheet, margins included. */
+    @page { size: A4; margin: 12mm 13mm; }
     @media print {
-      body { background: #fff; font-size: 9.5pt; line-height: 1.35; }
-      #cv { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+      html, body { background: var(--paper-bg); }
+      body { font-size: 9pt; line-height: 1.3; }
+      #cv { max-width: none; margin: 0; padding: 0; box-shadow: none; background: none; }
       #toolbar { display: none; }
       a { text-decoration: none; }
-      section { margin-top: 1.1rem; }
-      .section-head { break-after: avoid; }
-      .entry { break-inside: avoid; margin-bottom: .7rem; }
-      h1 { font-size: 22pt; }
+      h1 { font-size: 20pt; }
+      .qr { width: 23mm; }
+      /* Entries may run across pages, but never split a heading or a bullet */
+      .section-head, .entry > .left { break-after: avoid; }
+      li, p { break-inside: avoid; }
       * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     }
   </style>
@@ -171,6 +179,8 @@
   <script>
     // The CV content lives in this Markdown file, next to this page.
     const SOURCE = 'index.md';
+    // The QR code in the top right corner points here.
+    const QR_URL = 'https://janbujanowski.github.io/';
 
     const slug = s => s.toLowerCase().normalize('NFKD').replace(/[^\w]+/g, '-').replace(/^-|-$/g, '');
     const el = (tag, cls) => { const e = document.createElement(tag); if (cls) e.className = cls; return e; };
@@ -183,6 +193,12 @@
     // A paragraph that is nothing but `inline code` is used as a date or a label.
     const codeOnly = n => n.tagName === 'P' && n.children.length === 1 &&
       n.firstElementChild.tagName === 'CODE' && n.textContent.trim() === n.firstElementChild.textContent.trim();
+    // "MM/YYYY to now" gets "(x months)" counted up to the end of the current month.
+    const withDuration = text => text.replace(/^(\d{1,2})\/(\d{4}) to now$/, (all, m, y) => {
+      const now = new Date();
+      const months = (now.getFullYear() - y) * 12 + (now.getMonth() + 1 - m) + 1;
+      return `${all} (${months} months)`;
+    });
 
     // Turn the flat HTML from Markdown into header + sections + entries.
     function structure(flat) {
@@ -200,6 +216,17 @@
         else if (n.tagName === 'P' && header.right.lastElementChild?.tagName === 'H1') n.classList.add('subtitle');
         header.right.append(n);
       }
+      const qr = qrcode(0, 'M');
+      qr.addData(QR_URL);
+      qr.make();
+      const qrLink = el('a', 'qr');
+      qrLink.href = QR_URL;
+      qrLink.title = QR_URL;
+      qrLink.innerHTML = qr.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+      const qrCaption = el('a', 'qr-caption');
+      qrCaption.href = QR_URL;
+      qrCaption.textContent = QR_URL.replace(/^https?:\/\//, '').replace(/\/$/, '');
+      header.left.append(qrLink, qrCaption);
       out.append(headerEl);
 
       let section, current;
@@ -222,7 +249,7 @@
           // A code-only paragraph right under ### that contains a number is the entry's date;
           // anything else (`Neurox`, `Consent`) is a label inside the entry.
           if (/\d/.test(text) && !current.right.hasChildNodes() && current.left.querySelector('h3') && !current.left.querySelector('.date')) {
-            const d = el('span', 'date'); d.textContent = text; current.left.append(d);
+            const d = el('span', 'date'); d.textContent = withDuration(text); current.left.append(d);
           } else {
             const l = el('p', 'label'); l.textContent = text; current.right.append(l);
           }
@@ -267,11 +294,18 @@
     const THEMES = ['auto', 'light', 'dark'];
     const prefersDark = matchMedia('(prefers-color-scheme: dark)');
     const themeBtn = document.getElementById('theme-btn');
+    const pageStyle = document.head.appendChild(document.createElement('style'));
     let theme = 'auto';
     try { theme = THEMES.includes(localStorage.cvTheme) ? localStorage.cvTheme : 'auto'; } catch {}
+    const urlTheme = new URLSearchParams(location.search).get('theme');
+    if (THEMES.includes(urlTheme)) theme = urlTheme;
     function applyTheme() {
       const actual = theme === 'auto' ? (prefersDark.matches ? 'dark' : 'light') : theme;
       document.documentElement.dataset.theme = actual;
+      // @page can't read CSS variables, so copy the paper colour into it:
+      // that paints the print margins too instead of leaving a white/black frame.
+      const paper = getComputedStyle(document.documentElement).getPropertyValue('--paper-bg').trim();
+      pageStyle.textContent = `@page { background: ${paper}; }`;
       themeBtn.textContent = 'Theme: ' + (theme === 'auto' ? `auto (${actual})` : theme);
     }
     themeBtn.addEventListener('click', () => {
