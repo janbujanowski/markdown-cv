@@ -44,14 +44,16 @@ __SENIOR SOFTWARE ENGINEER (FULL-STACK / PLATFORM)__, Automotive, Telecommunicat
 __Stack__ C# / ASP.NET / Azure / Terraform / ARM templates / Azure DevOps CI/CD / Docker / PostgreSQL / MSSQL / Service Bus / AI coding agents / GSMA / IoT / ASN.1
 
 Greenfield IoT device management platform built on GSMA specifications. Our team builds a new subsystem as the reference implementation of DDD and clean architecture in the cloud: patterns and building blocks that other teams reuse to decouple and modernise the existing microservices ecosystem.
+
+The second project I've led started with a question: why are SIM card profiles still built by hand, byte by byte, in spreadsheets? The answer became a cross-team web app and API where marketing and SIM engineering design profiles together, with automated generation and shift-left validation replacing error-prone manual work. Powered by AI agents grounded in the industry specifications, Phase 1 was delivered in about 4 weeks instead of the expected 3–6 months.
+
+- Leading the security work towards GSMA certification; resolving TLS and certificate issues with legacy embedded devices
 - Designing the architecture and integrations with the existing microservices ecosystem, in line with country-specific legal requirements
-- Introduced a docs-as-code process: engineers and business analysts write Markdown specifications with developers directly in the repository, reviewed through Git pull requests. This cut delivery time from an estimated 3–6 months to about 4 weeks
-- Built a consistent knowledge base from telecom industry standards and repeatable prompt workflows for AI coding agents, so developers deliver features instead of spending hours reading PDF specifications
+- Introduced a docs-as-code process: engineers and business analysts write Markdown specifications with developers directly in the repository, reviewed through Git pull requests, a key enabler of the 4-week Phase 1
 - Building reusable patterns and proofs of concept that external teams adopt as their "golden path" for new services
 - Provisioning the new platform's Azure infrastructure from scratch with Terraform and ARM templates
 - Containerised services and Azure DevOps pipelines for build, test and deployment
-- Leading the security work towards GSMA certification; resolving TLS and certificate issues with legacy embedded devices
-- Onboarding and mentoring juniors and new joiners, writing technical documentation
+- Onboarding and mentoring juniors and new joiners
 
 ### Munich Re
 
