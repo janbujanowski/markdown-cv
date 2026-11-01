@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV</title>
+  <!-- The only dependency: a Markdown parser, pinned to an exact version. -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <style>
+    /* ---- Tweak the look here ---------------------------------------- */
+    :root {
+      --accent: #a00;
+      --text: #222;
+      --muted: #888;
+      --rule: #e5e5e5;
+      --page-bg: #f4f4f4;
+      --paper-bg: #fff;
+      --font: "Segoe UI", system-ui, -apple-system, Verdana, sans-serif;
+      --mono: Menlo, Consolas, monospace;
+      --left: 21%;          /* width of the left column (headings, dates) */
+      --gap: 2rem;          /* space between left and right column */
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--page-bg);
+      color: var(--text);
+      font: 15px/1.5 var(--font);
+    }
+
+    #cv {
+      max-width: 60rem;
+      margin: 2rem auto;
+      padding: 3rem 3.5rem;
+      background: var(--paper-bg);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+    }
+
+    /* Two-column rows: left = heading/meta, right = content */
+    .row {
+      display: grid;
+      grid-template-columns: var(--left) 1fr;
+      column-gap: var(--gap);
+    }
+    .row > .left { text-align: right; }
+
+    /* Header */
+    header.row { margin-bottom: 1rem; }
+    h1 { margin: 0; font-size: 2.6rem; font-weight: 400; line-height: 1.1; }
+    .subtitle { margin: .4rem 0 0; font-style: italic; font-size: 1.05rem; }
+    #webaddress { margin-top: .6rem; font: .85rem var(--mono); color: var(--muted); }
+    #webaddress a { color: inherit; text-decoration: none; }
+
+    /* Sections */
+    section { margin-top: 1.8rem; }
+    h2 {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .section-head { border-bottom: 1px solid var(--rule); padding-bottom: .3rem; margin-bottom: .8rem; }
+
+    /* Entries (one per ### heading) */
+    .entry { margin-bottom: 1.1rem; }
+    h3 { margin: 0; font-size: 1rem; font-weight: 600; }
+    .date { display: block; font: .8rem var(--mono); color: var(--muted); }
+
+    p { margin: 0 0 .5rem; }
+    ul { margin: .2rem 0 .6rem; padding-left: 1.1rem; }
+    li { margin-bottom: .15rem; }
+    a { color: inherit; }
+    a:hover { color: #39f; }
+    strong { font-weight: 600; }
+    code { font-family: var(--mono); font-size: .85em; }
+    .label { margin: .6rem 0 .1rem; font-weight: 600; }
+    .label:first-child { margin-top: 0; }
+
+    /* Per-section tweaks: every ## gets .section-<name>, every ### gets .entry-<name> */
+    .entry-gdpr { font-size: .75rem; color: var(--muted); }
+
+    /* Toolbar (screen only) */
+    #toolbar {
+      position: fixed; top: 1rem; right: 1rem;
+      display: flex; gap: .5rem;
+    }
+    #toolbar button {
+      font: inherit; font-size: .85rem;
+      padding: .4rem .8rem;
+      border: 1px solid #ccc; border-radius: 4px;
+      background: #fff; cursor: pointer;
+    }
+    #toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+
+    #error { max-width: 40rem; margin: 4rem auto; padding: 1rem 1.5rem; background: #fff3f3; border: 1px solid #f0c0c0; }
+    #error code { background: #fff; padding: .1rem .3rem; }
+
+    /* Phones: one column */
+    @media (max-width: 700px) {
+      #cv { margin: 0; padding: 1.5rem 1rem; box-shadow: none; }
+      .row { grid-template-columns: 1fr; }
+      .row > .left { text-align: left; }
+      .left:empty { display: none; }
+      h1 { font-size: 2rem; }
+      #toolbar { position: static; justify-content: flex-end; padding: .5rem 1rem 0; }
+    }
+
+    /* Print / Save as PDF */
+    @page { size: A4; margin: 14mm 14mm 14mm 12mm; }
+    @media print {
+      body { background: #fff; font-size: 9.5pt; line-height: 1.35; }
+      #cv { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+      #toolbar { display: none; }
+      a { text-decoration: none; }
+      section { margin-top: 1.1rem; }
+      .section-head { break-after: avoid; }
+      .entry { break-inside: avoid; margin-bottom: .7rem; }
+      h1 { font-size: 22pt; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <div id="toolbar">
+    <button type="button" onclick="window.print()">Save as PDF</button>
+  </div>
+  <main id="cv"></main>
+
+  <script>
+    // The CV content lives in this Markdown file, next to this page.
+    const SOURCE = 'index.md';
+
+    const slug = s => s.toLowerCase().normalize('NFKD').replace(/[^\w]+/g, '-').replace(/^-|-$/g, '');
+    const el = (tag, cls) => { const e = document.createElement(tag); if (cls) e.className = cls; return e; };
+    const row = (cls) => {
+      const r = el('div', 'row' + (cls ? ' ' + cls : ''));
+      const left = el('div', 'left'), right = el('div', 'right');
+      r.append(left, right);
+      return { r, left, right };
+    };
+    // A paragraph that is nothing but `inline code` is used as a date or a label.
+    const codeOnly = n => n.tagName === 'P' && n.children.length === 1 &&
+      n.firstElementChild.tagName === 'CODE' && n.textContent.trim() === n.firstElementChild.textContent.trim();
+
+    // Turn the flat HTML from Markdown into header + sections + entries.
+    function structure(flat) {
+      const out = document.createDocumentFragment();
+      const nodes = [...flat.childNodes].filter(n => n.nodeType === 1);
+
+      // Header: everything before the first ## heading
+      const header = row();
+      const headerEl = el('header', 'row');
+      headerEl.append(header.left, header.right);
+      let i = 0;
+      for (; i < nodes.length && nodes[i].tagName !== 'H2'; i++) {
+        const n = nodes[i];
+        if (n.tagName === 'H1') document.title = n.textContent.trim() + ' – CV';
+        else if (n.tagName === 'P' && header.right.lastElementChild?.tagName === 'H1') n.classList.add('subtitle');
+        header.right.append(n);
+      }
+      out.append(headerEl);
+
+      let section, current;
+      for (; i < nodes.length; i++) {
+        const n = nodes[i];
+        if (n.tagName === 'H2') {
+          section = el('section', 'section-' + slug(n.textContent));
+          const head = row('section-head');
+          head.left.append(n);
+          section.append(head.r);
+          current = row('intro');
+          section.append(current.r);
+          out.append(section);
+        } else if (n.tagName === 'H3') {
+          current = row('entry entry-' + slug(n.textContent));
+          current.left.append(n);
+          section.append(current.r);
+        } else if (codeOnly(n)) {
+          const text = n.textContent.trim();
+          // A code-only paragraph right under ### that contains a number is the entry's date;
+          // anything else (`Neurox`, `Consent`) is a label inside the entry.
+          if (/\d/.test(text) && !current.right.hasChildNodes() && current.left.querySelector('h3') && !current.left.querySelector('.date')) {
+            const d = el('span', 'date'); d.textContent = text; current.left.append(d);
+          } else {
+            const l = el('p', 'label'); l.textContent = text; current.right.append(l);
+          }
+        } else {
+          current.right.append(n);
+        }
+      }
+      // Drop empty intro rows (sections that start straight with ###)
+      out.querySelectorAll('.intro').forEach(r => { if (!r.querySelector('.right').hasChildNodes()) r.remove(); });
+      return out;
+    }
+
+    let lastSource = null;
+    async function load() {
+      const res = await fetch(SOURCE + '?t=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error(`${SOURCE}: HTTP ${res.status}`);
+      let md = await res.text();
+      if (md === lastSource) return;
+      lastSource = md;
+      md = md.replace(/^﻿?---\r?\n[\s\S]*?\r?\n---\r?\n/, ''); // strip old Jekyll front matter
+
+      const flat = el('div');
+      flat.innerHTML = marked.parse(md);
+      const cv = document.getElementById('cv');
+      const scroll = window.scrollY;
+      cv.replaceChildren(structure(flat));
+      window.scrollTo(0, scroll);
+    }
+
+    function showError(err) {
+      const box = el('div'); box.id = 'error';
+      const local = location.protocol === 'file:';
+      box.innerHTML = local
+        ? `<p><strong>Browsers can't load <code>${SOURCE}</code> from a page opened as a file.</strong></p>
+           <p>Serve the folder instead, for example run <code>python -m http.server</code> in it and open
+           <a href="http://localhost:8000">http://localhost:8000</a>.</p>`
+        : `<p><strong>Couldn't load <code>${SOURCE}</code>.</strong></p><p>${err.message}</p>`;
+      document.getElementById('cv').replaceWith(box);
+    }
+
+    load().then(() => {
+      // When previewing locally, pick up edits to the Markdown automatically.
+      if (['localhost', '127.0.0.1'].includes(location.hostname)) {
+        setInterval(() => load().catch(() => {}), 1500);
+      }
+    }).catch(showError);
+  </script>
+</body>
+</html>

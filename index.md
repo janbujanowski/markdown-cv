@@ -13,23 +13,23 @@ Senior Full-Stack & Platform Engineer, Master of Engineering (Intelligent System
 
 ## About me
 
-Senior full-stack engineer with 10 years of experience building and operating production systems end to end: backend services and APIs, web frontends (Angular, Vue.js, TypeScript/JavaScript), and the CI/CD pipelines, containers and cloud infrastructure that ship them.
+Senior full-stack engineer with 10 years of experience building and operating production systems end to end: backend services and APIs, web frontends (Angular, React, TypeScript), and the Terraform-provisioned cloud infrastructure, containers and CI/CD pipelines that ship them.
 
-I enjoy the work around the code as much as the code itself: building internal tools, libraries, templates and reference architectures that other teams adopt, automating delivery, and removing friction for fellow developers. I have worked as a developer, architect, team lead and DevOps engineer in corporations, start-ups and non-profits, so I am used to owning a product from requirements through deployment to production support.
+I enjoy the work around the code as much as the code itself: building internal tools, libraries, templates and reference architectures that other teams adopt, automating delivery, and removing friction for fellow developers. My official title has been developer, but I have often also acted as architect, team lead and DevOps engineer. I have done this in many kinds of teams and setups, in corporations, start-ups and non-profits, so I am used to owning a product from requirements through deployment to production support.
 
-I use AI in my day-to-day work, from Azure Machine Learning features in production to AI-assisted development with coding agents in my own workflow, and I want to keep building platform capabilities that make engineering teams faster.
+My interest in AI started long before the LLM boom. I specialised in Intelligent Systems for my master's degree (2018–2020) and built a self-learning trading system with neural networks and genetic algorithms, which I still develop as a side project. Today I use that background in production work, from an Azure Machine Learning pricing feature to AI coding agents and repeatable prompt workflows that my team uses every day. I want to keep building platform capabilities that make engineering teams faster.
 
 ## Core skills
 
-__Languages__ C# / TypeScript / JavaScript / Python / SQL / Java
+__Languages__ C# / TypeScript / JavaScript / Python / SQL
 
-__Frontend__ Angular (2–12+) / Vue.js / AngularJS / Kendo UI / HTML / CSS / REST API integration
+__Frontend__ Angular (2–19) / AngularJS / React / Kendo UI / HTML / CSS / REST API integration
 
 __Backend__ ASP.NET Core / microservices / event-driven architecture (Service Bus, Kafka) / DDD and clean architecture / PostgreSQL / MSSQL / Oracle
 
-__Cloud & DevOps__ Azure (AZ-204 certified) / Docker / CI/CD pipelines as code (Azure DevOps YAML) / Git / automated environment provisioning and configuration scripts / TLS and certificate management
+__Cloud & DevOps__ Infrastructure-as-Code (Terraform, ARM templates) / Azure (AZ-204 certified) / Docker / CI/CD pipelines as code (Azure DevOps YAML) / Git / TLS and certificate management
 
-__Developer tooling & AI__ internal libraries, templates and reference implementations / CLI and automation tools / DSL parser and scripting engine / test automation frameworks / Azure Machine Learning / neural networks (Python, CUDA) / AI-assisted development (coding agents)
+__Developer tooling & AI__ internal libraries, templates and reference implementations / CLI and automation tools / DSL parser and scripting engine / test automation frameworks / docs-as-code / AI coding agents and repeatable prompt workflows / AI knowledge bases built from technical standards / Azure Machine Learning / neural networks (Python, CUDA)
 
 __Engineering practices__ code review, unit and integration testing, system design, technical documentation, mentoring
 
@@ -41,11 +41,14 @@ __Engineering practices__ code review, unit and integration testing, system desi
 
 __SENIOR SOFTWARE ENGINEER (FULL-STACK / PLATFORM)__, Automotive, Telecommunications, IoT
 
-__Stack__ C# / ASP.NET / Azure / Azure DevOps CI/CD / Docker / PostgreSQL / MSSQL / Service Bus / GSMA / IoT / ASN.1
+__Stack__ C# / ASP.NET / Azure / Terraform / ARM templates / Azure DevOps CI/CD / Docker / PostgreSQL / MSSQL / Service Bus / AI coding agents / GSMA / IoT / ASN.1
 
 Greenfield IoT device management platform built on GSMA specifications. Our team builds a new subsystem as the reference implementation of DDD and clean architecture in the cloud: patterns and building blocks that other teams reuse to decouple and modernise the existing microservices ecosystem.
 - Designing the architecture and integrations with the existing microservices ecosystem, in line with country-specific legal requirements
+- Introduced a docs-as-code process: engineers and business analysts write Markdown specifications with developers directly in the repository, reviewed through Git pull requests. This cut delivery time from an estimated 3–6 months to about 4 weeks
+- Built a consistent knowledge base from telecom industry standards and repeatable prompt workflows for AI coding agents, so developers deliver features instead of spending hours reading PDF specifications
 - Building reusable patterns and proofs of concept that external teams adopt as their "golden path" for new services
+- Provisioning the new platform's Azure infrastructure from scratch with Terraform and ARM templates
 - Containerised services and Azure DevOps pipelines for build, test and deployment
 - Leading the security work towards GSMA certification; resolving TLS and certificate issues with legacy embedded devices
 - Onboarding and mentoring juniors and new joiners, writing technical documentation
@@ -56,18 +59,19 @@ Greenfield IoT device management platform built on GSMA specifications. Our team
 
 __SENIOR FULL-STACK ENGINEER__, Insurance
 
-__Stack__ C# / ASP.NET / Angular 12+ / TypeScript / Azure / Azure ML / Azure DevOps CI/CD / Docker / Service Bus
+__Stack__ C# / ASP.NET / Angular 12+ / TypeScript / Azure / Terraform / ARM templates / Azure ML / Azure DevOps CI/CD / Docker / Service Bus
 
 New insurance product with many breaking changes and decisions. I took part in the whole lifecycle, from analysing requirements and designing the solution to development, deployment and optimising the existing code base.
 - Built an AI-powered price prediction feature end to end: Azure Machine Learning model, backend API and an Angular UI widget
 - Developed Angular 12+ / TypeScript frontend features and backend microservices integrating the POS app with the main ecosystem
+- Built Azure infrastructure for new solutions from scratch as code with Terraform and ARM templates
 - Optimised and parameterised Azure DevOps CI/CD pipelines into reusable templates, cutting duplication and speeding up delivery
 - Re-architected the code base to speed up development and make it easier to maintain for the whole team
 - Earned Azure certifications: AZ-900, AI-900, AZ-204
 
 ### Sabbatical Year
 
-`06/21 to 06/22`
+`07/21 to 07/22`
 
 A year off to plan my next career steps, used for personal projects:
 - Neurox: neural network trading research in Python, C# and CUDA (continued from my master's thesis)
@@ -76,16 +80,16 @@ A year off to plan my next career steps, used for personal projects:
 
 ### Fenergo
 
-`06/18 to 06/21`
+`06/18 to 07/21`
 
 __SENIOR SOFTWARE DEVELOPER (FULL-STACK / INTEGRATIONS)__, Finance, KYC, Risk, Banking integrations
 
-__Stack__ C# / ASP.NET / JavaScript / Java (Apache Camel) / JBoss / Kafka / Oracle / MSSQL / Docker / Azure DevOps / Git / TFVC
+__Stack__ C# / ASP.NET / React / JavaScript / Java (Apache Camel) / JBoss / Kafka / Oracle / MSSQL / Docker / Azure DevOps / Git / TFVC
 
 Integration developer for banks in many countries. I exposed and consumed APIs, translated data between formats and validated it to fit existing ecosystems, working across a mixed JVM and .NET stack.
 - Designed and developed the Client Onboarding (KYC) system
-- Built frontend features for data entry and reporting, and configured the product UI for each client
-- Wrote environment provisioning and configuration scripts that prepared enterprise servers to run the whole platform repeatably
+- Configured the React product UI for each client and extended its core functionality for data entry and reporting
+- Reworked how product patches were applied, speeding up product delivery by about 30%
 - Integrated the product with systems in client environments using Kafka, Apache Camel and REST APIs
 - Implemented new business rules in the rules engine, based on legal requirements prepared by BA teams
 
@@ -95,17 +99,17 @@ Integration developer for banks in many countries. I exposed and consumed APIs, 
 
 __SOFTWARE DEVELOPER__, RPA, Developer tooling, Automation
 
-__Stack__ C# / ASP.NET / Vue.js / JavaScript / MSSQL / MSBuild / WinAPI / Slack API / OCR / Git
+__Stack__ C# / ASP.NET / JavaScript / MSSQL / MSBuild / WinAPI / Slack API / OCR / Git
 
 Built "G1ANT.Robot", a Robotic Process Automation platform competing with UiPath and Automation Anywhere. The product itself was a developer tool: it let process owners automate their work without specialist developer help.
 - Developed the parser and execution engine for the product's own scripting language (DSL)
 - Designed and built a queueing system on MSSQL for orchestrating process execution
-- Built web UI features in Vue.js and integrations such as Slack bots
+- Built web UI features and integrations such as Slack bots
 - Set up CI/CD pipelines for continuous integration and delivery of the product
 
 ### UniCredit
 
-`07/15 to 08/16`
+`09/15 to 07/16`
 
 __DEVELOPER SPECIALIST__, Finance, Trading reports
 
@@ -118,7 +122,7 @@ Internal system that gathered data from portfolios and systems across the compan
 
 ### Finder Systems
 
-`07/15 to 08/16`
+`03/14 to 12/14`
 
 __JUNIOR FULL-STACK DEVELOPER__, Automotive, Fleet reports
 
@@ -179,7 +183,7 @@ As a Microsoft Student Partner I organised the student group, managed relations 
 
 `Scuba Diving`
 
-My greatest hobby, which runs in my family. I hold a CMAS P3 (Divemaster) licence in a side-mount configuration and volunteer with the NGO *Mniejszy Błękit*, part of the Handicapped Scuba Association. I also have experience with underwater construction work and was responsible for the underwater safety of students during the University of Warsaw's 2013 archaeological excavations in Crimea.
+My greatest hobby, which runs in my family. I hold a IDF Scuba Instructor licence in a side-mount configuration and volunteer with the NGO *Mniejszy Błękit*, part of the Handicapped Scuba Association. I also have experience with underwater construction work and was responsible for the underwater safety of students during the University of Warsaw's 2013 archaeological excavations in Crimea.
 
 `Sailing & Kitesurfing`
 
