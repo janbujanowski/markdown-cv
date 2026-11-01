@@ -4,20 +4,130 @@ title: Jan Bujanowski
 ---
 
 # Jan Bujanowski
-Software Developer, Master of Engineering, Warsaw University of Life Sciences
+Senior Full-Stack & Platform Engineer, Master of Engineering (Intelligent Systems), Warsaw University of Life Sciences
 
 <div id="webaddress">
-<a href="jan.bujanowski@gmail.com">jan.bujanowski@gmail.com</a>
+<a href="mailto:jan.bujanowski@gmail.com">jan.bujanowski@gmail.com</a>
 | +48 506 803 600
 </div>
 
 ## About me
 
-​Last 5 years I’ve been dedicating my free time into researching AI possibilities in assisting
-trading indicators and I am very keen on joining quantitative development teams to finally mix my passion with proffesional career. It has always been my interest however it took some time to develop necessary skills and experience which I believe I have finally acquired. 
-While my main field of experience remains in .NET technologies, during my 10 years career I have faced various challenges and I was never afraid to step out into the new unknowns. I have worked with both corporations and small startup-like companies, as well as non-profit organizations, where I learned about different stages and methods of projects’ development. 
-I took part in projects not only as a programmer, but executing responsibilities of an architect, team leader, and administrator/dev-ops, which helped me to deal with problems at any stage of product delivery regardless if it's a technical, procedural or external obstacle.
-Please see details of my experience in a brief summary below
+Senior full-stack engineer with 10 years of experience building and operating production systems end to end: backend services and APIs, web frontends (Angular, Vue.js, TypeScript/JavaScript), and the CI/CD pipelines, containers and cloud infrastructure that ship them.
+
+I enjoy the work around the code as much as the code itself: building internal tools, libraries, templates and reference architectures that other teams adopt, automating delivery, and removing friction for fellow developers. I have worked as a developer, architect, team lead and DevOps engineer in corporations, start-ups and non-profits, so I am used to owning a product from requirements through deployment to production support.
+
+I use AI in my day-to-day work, from Azure Machine Learning features in production to AI-assisted development with coding agents in my own workflow, and I want to keep building platform capabilities that make engineering teams faster.
+
+## Core skills
+
+__Languages__ C# / TypeScript / JavaScript / Python / SQL / Java
+
+__Frontend__ Angular (2–12+) / Vue.js / AngularJS / Kendo UI / HTML / CSS / REST API integration
+
+__Backend__ ASP.NET Core / microservices / event-driven architecture (Service Bus, Kafka) / DDD and clean architecture / PostgreSQL / MSSQL / Oracle
+
+__Cloud & DevOps__ Azure (AZ-204 certified) / Docker / CI/CD pipelines as code (Azure DevOps YAML) / Git / automated environment provisioning and configuration scripts / TLS and certificate management
+
+__Developer tooling & AI__ internal libraries, templates and reference implementations / CLI and automation tools / DSL parser and scripting engine / test automation frameworks / Azure Machine Learning / neural networks (Python, CUDA) / AI-assisted development (coding agents)
+
+__Engineering practices__ code review, unit and integration testing, system design, technical documentation, mentoring
+
+## Work experience
+
+### Cubic
+
+`06/24 to now`
+
+__SENIOR SOFTWARE ENGINEER (FULL-STACK / PLATFORM)__, Automotive, Telecommunications, IoT
+
+__Stack__ C# / ASP.NET / Azure / Azure DevOps CI/CD / Docker / PostgreSQL / MSSQL / Service Bus / GSMA / IoT / ASN.1
+
+Greenfield IoT device management platform built on GSMA specifications. Our team builds a new subsystem as the reference implementation of DDD and clean architecture in the cloud: patterns and building blocks that other teams reuse to decouple and modernise the existing microservices ecosystem.
+- Designing the architecture and integrations with the existing microservices ecosystem, in line with country-specific legal requirements
+- Building reusable patterns and proofs of concept that external teams adopt as their "golden path" for new services
+- Containerised services and Azure DevOps pipelines for build, test and deployment
+- Leading the security work towards GSMA certification; resolving TLS and certificate issues with legacy embedded devices
+- Onboarding and mentoring juniors and new joiners, writing technical documentation
+
+### Munich Re
+
+`10/22 to 06/24`
+
+__SENIOR FULL-STACK ENGINEER__, Insurance
+
+__Stack__ C# / ASP.NET / Angular 12+ / TypeScript / Azure / Azure ML / Azure DevOps CI/CD / Docker / Service Bus
+
+New insurance product with many breaking changes and decisions. I took part in the whole lifecycle, from analysing requirements and designing the solution to development, deployment and optimising the existing code base.
+- Built an AI-powered price prediction feature end to end: Azure Machine Learning model, backend API and an Angular UI widget
+- Developed Angular 12+ / TypeScript frontend features and backend microservices integrating the POS app with the main ecosystem
+- Optimised and parameterised Azure DevOps CI/CD pipelines into reusable templates, cutting duplication and speeding up delivery
+- Re-architected the code base to speed up development and make it easier to maintain for the whole team
+- Earned Azure certifications: AZ-900, AI-900, AZ-204
+
+### Sabbatical Year
+
+`06/21 to 06/22`
+
+A year off to plan my next career steps, used for personal projects:
+- Neurox: neural network trading research in Python, C# and CUDA (continued from my master's thesis)
+- Divemaster course (CMAS P3)
+- Restored inherited land, built a wooden summer cabin, and helped the city gardens' administration clear their technical debt
+
+### Fenergo
+
+`06/18 to 06/21`
+
+__SENIOR SOFTWARE DEVELOPER (FULL-STACK / INTEGRATIONS)__, Finance, KYC, Risk, Banking integrations
+
+__Stack__ C# / ASP.NET / JavaScript / Java (Apache Camel) / JBoss / Kafka / Oracle / MSSQL / Docker / Azure DevOps / Git / TFVC
+
+Integration developer for banks in many countries. I exposed and consumed APIs, translated data between formats and validated it to fit existing ecosystems, working across a mixed JVM and .NET stack.
+- Designed and developed the Client Onboarding (KYC) system
+- Built frontend features for data entry and reporting, and configured the product UI for each client
+- Wrote environment provisioning and configuration scripts that prepared enterprise servers to run the whole platform repeatably
+- Integrated the product with systems in client environments using Kafka, Apache Camel and REST APIs
+- Implemented new business rules in the rules engine, based on legal requirements prepared by BA teams
+
+### G1ANT
+
+`12/16 to 06/18`
+
+__SOFTWARE DEVELOPER__, RPA, Developer tooling, Automation
+
+__Stack__ C# / ASP.NET / Vue.js / JavaScript / MSSQL / MSBuild / WinAPI / Slack API / OCR / Git
+
+Built "G1ANT.Robot", a Robotic Process Automation platform competing with UiPath and Automation Anywhere. The product itself was a developer tool: it let process owners automate their work without specialist developer help.
+- Developed the parser and execution engine for the product's own scripting language (DSL)
+- Designed and built a queueing system on MSSQL for orchestrating process execution
+- Built web UI features in Vue.js and integrations such as Slack bots
+- Set up CI/CD pipelines for continuous integration and delivery of the product
+
+### UniCredit
+
+`07/15 to 08/16`
+
+__DEVELOPER SPECIALIST__, Finance, Trading reports
+
+__Stack__ C# / ASP.NET / JavaScript / AngularJS / VB.NET (Excel) / MSSQL / Entity Framework / TFVC / ETL
+
+Internal system that gathered data from portfolios and systems across the company into daily reports for traders.
+- Built a test automation framework and data loading tools
+- Developed internal web tools for production support: add-ons for first-line support, release management and client notifications
+- Built new reports and calculations based on business requirements
+
+### Finder Systems
+
+`07/15 to 08/16`
+
+__JUNIOR FULL-STACK DEVELOPER__, Automotive, Fleet reports
+
+__Stack__ ASP.NET MVC / JavaScript / Telerik Kendo UI / Facebook API / Nokia Maps API
+
+Integration platform for real-time vehicle fleet monitoring and optimisation reports. My main focus was the driving school product: a lesson scheduler with analysis and statistics of ride data collected from vehicles.
+- Frontend and full-stack features: reports, map drawing, fixes
+- Mobile development (Android, Windows Phone)
+- Backend middleware services: repaired corrupted data coming from devices
 
 ## Education and training
 
@@ -27,177 +137,53 @@ Please see details of my experience in a brief summary below
 
 __Master of Engineering__, Field: *Intelligent Systems*, Warsaw University of Life Sciences
 
-The full title of my thesis was "Construction and testing of the transaction system for financial instruments listed on the
-Warsaw Stock Exchange". The goal of the project was to create a program able to perform transactions on a test system
-with data from Warsaw Stock Market and learn by itself to generate profits. Using neural networks and genetic
-algorithms it was able to create a valid model that could be used to determine opportune times to perform stock
-operations.
+Thesis: "Construction and testing of the transaction system for financial instruments listed on the Warsaw Stock Exchange". A self-learning trading system that used neural networks and genetic algorithms to find good moments to trade, tested against Warsaw Stock Exchange data.
 
 ### Bachelors
 
 `09/12 to 02/16`
 
-__Bachelor of Engineering__, Field: *Software engineering*, Warsaw University of Life Sciences
+__Bachelor of Engineering__, Field: *Software Engineering*, Warsaw University of Life Sciences
 
-Design and development of mobile app for putting reservations into parking lot management system currently known as [ParkFlow](https://parkflow.io/)
+Designed and developed a mobile app for booking spaces in a parking management system, now known as [ParkFlow](https://parkflow.io/)
 
-### Certs and Licences 
+### Certificates and licences
 
-AZ-900, AI-900, AZ-204, Driving B, CMAS P3 Divemaster, Yacht steerman, Kiteboarding 2I
+Microsoft AZ-204 (Azure Developer Associate), AZ-900, AI-900 · Driving licence B · CMAS P3 Divemaster · Yacht helmsman · Kiteboarding 2I
 
 ### Languages
 
-English C1, French B2, Spanish B1
-
-## Work experience
-
-### Cubic
-
-`06/24 to now`
-
-__SENIOR .NET ENGINEER__, Automotive, Telecommunications
-
-__Stack__ C# / ASP.NET / Azure / ADO / Docker / Postgres/MSSQL / GSMA / IoT / ASN.1 / ServiceBus
-
-Architectural design and development based on GSMA specifications for IoT device manager. Greenfield product with multiple architectural decisions, managing integrations with existing microservices ecosystem, complying with country specific law requirements. Our team is responsible for creating a new subsystem as a showcase of DDD and clean architecture in a proper cloud architecture to make patterns for decoupling and optimizing existing codebase.
-- • Leading the path to GSMA security certification. 
-- • Providing PoCs to external teams, 
-- • resolving TLS and Certificates issues for old embedded systems, 
-- • supporting juniors and new joiners by knowledge transfer
-
-### Munich Re
-
-`10/22 to 06/24`
-
-__SENIOR .NET ENGINEER__, Insurances 
-
-__Stack__ C# / ASP.NET / Azure / ADO / Docker / ServiceBus
-
-Working on a new product for insurance market with a lot of breaking changes and decisions. I've participated from analyzing requirements, preparing the solution to development and deployment and optimizing the exisiting code base.
-- • Created new feature Azure Machine Learning solution, price predictor calculator and integrated with UI widget
-- • Developing backend microservices for integration POS app with main ecosystem
-- • Developing frontend changes in Angular 12+
-- • CICD Azure DevOps pipelines optimizing and parametrizing the solution
-- • Rearchitecturing code base to increase development speed and facilitate maintenance.
-- • Azure Certifications aquired : AZ-900, AI-900, AZ-204
-
-### Sabbatical Year
-
-`06/21 to 06/22`
-
-I took some time off to plan on my next life and career goals. Additionally pursued a bit of side projects/hobby :
-- • Divemaster course (P3)
-- • Neurox (Neural Networks projects started as my master thesis)
-- • Revitalized inherited land, built a wooden summer cabin helped city gardens administration with tech debt
-
-### Fenergo 
-
-`06/18 to 06/21`
-
-__SENIOR .NET DEVELOPER__, Finances, KYC, Risk, Banking integrations
-
-__Stack__ C# / ASP.NET / Java - Apache-Camel / JBoss / Kafka / Oracle / MSSQL / Docker / AzureDevOps / Git / TFVC
-
-During my employment, I have worked with various banks within various locations mostly as an integration developer. I
-had to both expose and consume different APIs, translate the data between formats, perform validations to integrate
-with an existing ecosystem, using a set of different tools consisting on mixed technologies (JVM and .NET based).
-Additionally, I've performed product updates, UI configuration, and set up enterprise environment configuration scripts
-(preparing the OS to run all services properly)
-- • Designing and developing a system for Client Onboarding process (KYC)
-- • Integrating the product with systems in the client's environment
-- • Developing front-end changes for data manipulation and reading reports
-- • Analyzing and developing new business rules in engine based on laws prepared by BA Teams
-
-### G1ANT
-
-`12/16 to 06/18`
-
-__C# DEVELOPER__, RPA, Automation
-
-__Stack__ WinAPI / C# / MSSQL / ASP.NET / MSBuild / Slack API / Git / OCR / Vue.js
-
-- • Robotic Process Automation software "G1ANT.Robot", a modern competitor for tools like UIPath,
-- Automation Anywhere etc.
-- • Designing and developing an MSSQL enqueuing system for managing the processes execution
-- • Developing an engine for parsing own script language designed to enable process owners to automate their work
-- without specialized developer help
-- • Configuring pipelines for continuous integration and deployment
-
-### UniCredit
-
-`07/15 to 08/16`
-
-__DEVELOPER SPECIALIST__, Finances, Trading reports
-
-__Stack__ C# / MSSQL / ASP.NET / JS / Angular 1 / VB. NET (excel) / MSSQL / EF / TFVC / ETL
-
-Internal system gathering data from portfolios and systems across company to summarize daily reports for traders.
-Besides test automation, I was developing tools to facilitate daily tasks like data recalculation or reloading datasets.
-- • software testing automation framework and tools for data loading
-- • developing new reports and calculations based on business requirements
-- • new tools for production maintenance built-in web add-ons for 1st line support, release management, client notifications
-
-### Finder Systems
-
-`07/15 to 08/16`
-
-__JUNIOR FULLSTACK__, Automotive, Fleet reports
-
-__Stack__ ASP.NET MVC / Telerik Kendo UI / Facebook API / Nokia Maps API / JS
-
-Main product was a integration platform to monitor vehicles fleets in real-time with multiple reports for optimization.
-As a junior developer I had an opportunity to touch a bit of everything but mostly focused on one of the product for
-driving academy - a lesson scheduler with data analysis and statistics of ride data collected from a vehicle.
-• software maintenance and new features (bug fixing, report modification, map drawing fixes)
-• mobile development (Android/Windows Phone)
-• backend middleware services (bug fixing corrupted data from devices)
+Polish (native), English C1, French B2, Spanish B1
 
 ## Other
 
 ### Side projects
 
 `Neurox`
-Continuation of master thesis project. An AI stock indicator to perform analysis and trade decisions, using mix of C#, Python and CUDA to train the networks
+
+Continuation of my master's thesis: an AI stock indicator for analysis and trading decisions, written in Python, C# and CUDA for training the networks.
 
 `Advent of Code`
 
-Every year I participate in resolving end of year coding challanges, which consists on resolving algorithmic riddles surronded by Christmas plot :)
+Every year I solve the Advent of Code end-of-year algorithmic puzzles.
+
+`NGO: Warsaw Reprivatization`
+
+With the non-profit "Miasto Jest Nasze" ("The City Is Ours") we built a tool that helped volunteers, mostly lawyers and social activists, analyse court documents about unlawful reprivatization of real estate in major Polish cities. An OCR pipeline and a purpose-built search engine scanned thousands of pages of court archives for the names of the people responsible, which proved instrumental in later journalistic investigations.
 
 `MSP`
 
-During my studies I participated in Microsoft Student Partner Project. I was responsible for organizing student group as well as relations between company and university. I was organizing regular meetings and leading some of them training the students in .NET technologies.
-
-Skills summarized : projects management, event organization, maintenance of official documentation for registered student
-organisation, leadership of group, relations between company and university (+ maintenance of public finances), knowledge transfer
-
-`NGO` 
-
-*Warsaw Reprivatization* : In collaboration with a non-profit organization "Miasto Jest Nasze" ("The City Is Ours") we
-created a project allowing other volunteers, consisting mostly of lawyers and social activists, to read and effectively
-analyse court documents regarding unlawful reprivatization of real estate in major Polish cities.
-Using OCR technology and a purpose-built search engine we scoured thousands of pages of court archives for names of
-the responsible parties which proved to be instrumental in further journalistic investigations.
+As a Microsoft Student Partner I organised the student group, managed relations between the company and the university, and ran regular trainings in .NET technologies. Skills: project management, event organisation, leadership, knowledge transfer.
 
 ### Hobbies
 
-`Scuba Diving` 
+`Scuba Diving`
 
-Scuba-diving is my greatest hobby. I feel like I've been underwater since I was born early childhood, as passion for diving runs deep in my family. 
-My father used to be an instructor and he was taking me underwater whenever we got a chance. Currently I hold a P3 CMAS diving license (Divemaster) in a side-mount
-configuration with plans to complete higher levels. I participate in NGO *Mniejszy Błękit* which is part of Handicapped Scuba Association where we make the impossible possible.
-Besides recreational, I have experience with underwater works and construction (lifting and moving sunk
-sailing boats, building wooden structures, submerging obstacles, connecting existing parts of the track etc.) which I
-acquired during renovation of the underwater track for students, all in dark and cold waters in Poland. Additionally, in
-2013 I took part in underwater archaeological excavations in Crimea organized by the University of Warsaw where I was
-responsible for underwater safety of the students.
+My greatest hobby, which runs in my family. I hold a CMAS P3 (Divemaster) licence in a side-mount configuration and volunteer with the NGO *Mniejszy Błękit*, part of the Handicapped Scuba Association. I also have experience with underwater construction work and was responsible for the underwater safety of students during the University of Warsaw's 2013 archaeological excavations in Crimea.
 
-`Sailing` 
+`Sailing & Kitesurfing`
 
-I'm a certified yacht steerman :). I've participated in *School of sails* on Pogoria in 2010 and *Tall Ship Races 2011* Beside that - multiple trips to the lakes, croatia, France, Gibraltar, Canary Islands, Cabo Verde
-
-`Kitesurfing`
-
-Simply to pair up with all of the above. When there is no time for a full sailing trip or no crew that's a great fun sport to do on a weekend escape trip.
+Certified yacht helmsman: *School of Sails* on the Pogoria (2010), *Tall Ships Races 2011*, and trips to Croatia, France, Gibraltar, the Canary Islands and Cape Verde. Kitesurfing when there's no time or crew for a full sailing trip.
 
 ### GDPR
 
